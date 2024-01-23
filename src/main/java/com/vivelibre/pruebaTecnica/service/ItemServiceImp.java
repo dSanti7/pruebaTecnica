@@ -18,7 +18,8 @@ public class ItemServiceImp implements ItemService {
     public String getToken() {
         //Configuración de ruta
         WebClient client = WebClient.builder()
-                .baseUrl("http://localhost:8080")
+                //.baseUrl("http://localhost:8080") configuración sin docker
+                .baseUrl("http://getToken:8080")
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .build();
 
