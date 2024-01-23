@@ -1,0 +1,12 @@
+services:
+  servicio1:
+    image: skeet15/auth-vivelibre
+    container_name: getToken
+    ports:
+      - "8080:8080"
+
+  servicio2:
+    image: slezama/myservicetest
+    container_name: myService
+    ports:
+      - "8081:8081"
